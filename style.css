@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #112d4e; */
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    background: url(asset/bg2.avif);
+    background-position: center; 
+    background-size: cover;
+    object-fit: cover;
+    font-family: 'Caladea', serif;
+}
+.info{
+    margin-top: 50px;
+}
+.wraper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;  
+   
+}
+h1{
+    text-align: center;
+}
+.mian{
+width: 700px;
+
+}
+.tabname{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+
+.access img{
+    width: 127px;
+    height: 101px;
+}
+.access button{
+    padding: 8px 8px;
+    background-color: #264a74;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Caladea', serif;
+
+}
+.yourlocation{
+    width: 100%;
+    position: relative;
+}
+.searchlocation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.anothersearchinfo{
+    display: flex;
+}
+.locationname{
+    display: flex;  
+    justify-content: center; 
+    gap: 20px;
+}
+.searchinfowrap{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabbg{
+    background-color: rgb(188, 188, 188);
+    color: black;
+}
+.notfound,.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+.notfound img,.loading img {
+width: 340px;
+height: 160px;
+}
+.access,.yourlocation,.searchlocation,.searchlocation2,.notfound{
+    display: none;
+}
+.searchlocation2{
+    position: relative;
+}
+.active{
+    display: flex;
+}
+.yourinfo,.searchinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.name{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+    
+input::placeholder{
+    color: black;
+    font-family: 'Caladea', serif;
+
+}
+
+input{
+    color: black;
+    padding: 12px;
+    width: 75%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgb(188, 188, 188);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Caladea', serif;
+
+}
+form button{
+    border-radius: 50%;
+    background-color: #264a74;
+    outline: none;
+    border: none;
+    object-fit: cover;
+}
+img{
+    width: 27px;
+}
+form{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin: 10px 20px;
+    justify-content: center;
+}
+.imginfo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.perameter img{
+    width: 60px;
+}
+.perameter{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+.boblanimation,.boblanimationinsearch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -10;
+    animation: boble 3s linear infinite;
+
+}
+.boblanimation img,.boblanimationinsearch img{
+    width: 180px;
+}
+@keyframes boble {
+    50%{
+        top: 54%;
+        left: 46%;
+    }
+}
